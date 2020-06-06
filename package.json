@@ -1,0 +1,29 @@
+{
+  "name": "frontend-leetcode",
+  "version": "1.0.0",
+  "description": "this is a front end leetcode problems repo",
+  "main": "index.js",
+  "dependencies": {
+    "vuepress": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BruceYuj/frontend-leetcode.git"
+  },
+  "keywords": [
+    "leetcode",
+    "javascript"
+  ],
+  "author": "BY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BruceYuj/frontend-leetcode/issues"
+  },
+  "homepage": "https://github.com/BruceYuj/frontend-leetcode#readme"
+}
