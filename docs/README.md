@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Hero 标题
-tagline: Hero 副标
+tagline: Hero 副
 actionText: 快速上手 →
 actionLink: /algorithms/
 features:
