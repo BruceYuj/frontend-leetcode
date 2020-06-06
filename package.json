@@ -6,9 +6,14 @@
   "dependencies": {
     "vuepress": "^1.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "vuepress-plugin-mathjax": "^1.2.8",
+    "watchpack": "^1.6.1"
+  },
   "scripts": {
-    "docs:dev": "vuepress dev docs --temp .temp",
+    "start": "nodemon --ext md,vue,js --watch .vuepress --watch . --exec vuepress dev docs",
+    "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
