@@ -3,16 +3,17 @@ module.exports = {
     description: 'a repo about leetcode problems',
     base: '/frontend-leetcode/',
     themeConfig: {
-      displayAllHeaders: true,
+      // displayAllHeaders: true,
       sidebar: [
         '/leetcode/'
       ],
       repo: 'https://github.com/BruceYuj/frontend-leetcode',
-      repoLabel: '在 github 上编辑此页',
+      repoLabel: 'Github Stars',
       docsDir: 'docs',
       docsBranch: 'master',
       editLinks: true,
-      editLinkText: '帮助我改善此页面'
+      editLinkText: '在 Github 上改善此页面',
+      lastUpdated: '最后更新时间'
     },
     plugins: [
       [

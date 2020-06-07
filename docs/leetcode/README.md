@@ -1,10 +1,64 @@
 ---
-sidebarDepth: 2
+sidebarDepth: 1
 ---
 
-# 题目链接
-## leetcode
-### [5. 最长回文子串(medium)](main/5.md)
+# 题目分类
+
+## 动态规划
+### 背包 DP
+
+### 状压 DP
+
+### 数位 DP
+
+### 计数 DP
+
+### 区间 DP
+
+### 插头 DP
+
+### 树形 DP
+
+### DAG DP
+
+### 动态 DP
+
+
+## 贪心算法
+
+## 分治
+
+## 二分法
+
+## 双指针
+
+## 滑动窗口
+
+## 位运算
+
+## DFS 和 BFS
+
+## 排序
+
+## 栈
+
+## 堆
+
+## 图
+
+## 树
+
+### 线段树
+
+## 字符串
+
+## 数组
+
+## 哈希表
+
+## 链表
+
+- [5. 最长回文子串(medium)](main/5.md) 
 - [11. 盛最多水的容器(medium)](main/11.md)
 - [22. 括号生成(medium)](main/22.md)
 - [24. 两两交换链表中的节点(medium)](main/24.md)
@@ -115,7 +169,6 @@ sidebarDepth: 2
 - [1466. 重新规划路线](main/1466.md)
 
 
-## 剑指offer
 - [面试题04. 二维数组中的查找(easy)](LCOF/main/4.md)
 - [面试题13. 机器人的运动范围(medium)](LCOF/main/13.md)
 - [面试题40. 最小的k个数(easy)](LCOF/main/40.md)
@@ -125,12 +178,10 @@ sidebarDepth: 2
 - [面试题57 - II. 和为s的连续正数序列(easy)](LCOF/main/57-II.md)
 
 
-## 程序员面试金典
 - [面试题 01.06. 字符串压缩(easy)](LCCI/main/01.06.md)
 - [面试题 10.01. 合并排序的数组(easy)](LCCI/main/10.01.md)
 - [面试题 17.16. 按摩师(easy)](LCCI/main/17.16.md)
 - [面试题 08.11. 硬币(medium)](LCCI/main/08.11.md)
 
 
-## 其他
 - [LCP 09. 最小跳跃次数(hard)](main/LCP-09.md)
