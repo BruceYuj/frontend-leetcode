@@ -1,3 +1,6 @@
+var  {sidebars} =  require('./sidebarHelper/index.js')
+// console.log(sidebars.length)
+
 module.exports = {
     title: 'front-end leetcode',
     description: 'a repo about leetcode problems',
@@ -5,10 +8,10 @@ module.exports = {
     themeConfig: {
       // displayAllHeaders: true,
       sidebar: [
-        '/leetcode/'
+        ...sidebars
       ],
       repo: 'https://github.com/BruceYuj/frontend-leetcode',
-      repoLabel: 'Github Stars',
+      repoLabel: '亲, Github Star 一下',
       docsDir: 'docs',
       docsBranch: 'master',
       editLinks: true,

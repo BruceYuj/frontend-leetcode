@@ -13,7 +13,6 @@
 69
 307
 
-
 ## 200531
 
 https://leetcode-cn.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
