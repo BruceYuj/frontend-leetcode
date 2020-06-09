@@ -77,7 +77,9 @@ const normalDP = [
   { title: '面试题 08.11. 硬币',
     path: 'leetcode/LCCI/08.11',
     sidebarDepth: 0 },
-
+    { title: '面试题46. 把数字翻译成字符串',
+    path: 'leetcode/LCOF/46',
+    sidebarDepth: 0 },
 ]
 
 const compressDP = [

@@ -31,6 +31,7 @@ sidebarDepth: 1
 - [1444. 切披萨的方案数(hard)](../../leetcode/main/1444.md)
 - [面试题 17.16. 按摩师(easy)](../../leetcode/LCCI/17.16.md)
 - [面试题 08.11. 硬币(medium)](../../leetcode/LCCI/08.11.md)
+- [面试题46. 把数字翻译成字符串(medium)](../../leetcode/LCOF/46.md)
 
 ## 背包 DP
 
