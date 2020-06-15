@@ -1,10 +1,12 @@
 const pluginConf = require('./config/pluginConf.js');
 const navConf = require('./config/navConf.js');
+const headConf = require('./config/headConf.js');
 // var  {sidebars} =  require('./sidebarHelper/index.js')
 // console.log(sidebars.length)
 
 module.exports = {
     title: 'front-end leetcode',
+    head: headConf,
     description: 'a repo about leetcode problems',
     base: '/frontend-leetcode/',
     themeConfig: {

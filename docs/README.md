@@ -3,7 +3,7 @@ home: true
 heroImage: https://myblog-1257043911.cos.ap-chengdu.myqcloud.com/config/logo_1.png
 heroText: 前端 Leetcode 题解
 actionText: 查看题解
-actionLink: /directory/by-tag/dp
+actionLink: /problems/dp/
 features:
 - title: 搜索
   details: 搜索框支持题目和编号搜索
