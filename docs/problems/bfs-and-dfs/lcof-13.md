@@ -1,0 +1,81 @@
+---
+title: 面试题13. 机器人的运动范围
+sidebarDepth: 0
+autoPrev: "1466"
+---
+## 简介
+- [面试题13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+
+本题一看就是对于 BFS 和 DFS 的应用。
+我们在搜索过程中进行合法判断，如果不合法则剪枝回溯。
+
+## 解法一 - BFS
+
+```javascript
+/**
+ * @param {number} m
+ * @param {number} n
+ * @param {number} k
+ * @return {number}
+ */
+var movingCount = function(m, n, k) {
+    if(k < 0) return 0;
+    let queue = [[0, 0]];
+    let visited = new Array(m);
+    for(let i = 0; i < m; i++) visited[i] = new Array(n).fill(false);
+    visited[0][0] = true;
+    let ans = 0;
+    while(queue.length) {
+        let len = queue.length;
+
+        for(let i = 0; i < len; i++) {
+            let [row, col] = queue.shift();
+            ans++;
+            if(row + 1 < m && !visited[row+1][col] && isValid(row+1, col)) {
+                queue.push([row+1, col]);
+                visited[row+1][col] = true;
+            }
+            if(row - 1 >= 0 && !visited[row-1][col] && isValid(row-1, col)) { // 这里可以删除
+                queue.push([row-1, col]);
+                visited[row-1][col] = true;
+            }
+            if(col + 1 < n && !visited[row][col+1] && isValid(row, col+1)) {
+                queue.push([row, col+1]);
+                visited[row][col+1] = true;
+            }
+            if(col - 1 >= 0 && !visited[row][col-1] && isValid(row, col-1)) { // 这里可以删除
+                queue.push([row, col-1]);
+                visited[row][col-1] = true;
+            }
+        }
+    }
+
+    return ans;
+
+    function isValid(row, col) {
+        let ans = 0;
+        while(row > 0) {
+            ans += row % 10;
+            row = Math.floor(row/10);
+        }
+        while(col > 0) {
+            ans += col % 10;
+            col = Math.floor(col/10);
+        }
+
+        return ans <= k;
+    }
+};
+```
+
+**复杂度分析**:
+- 时间复杂度：$O(mn)$
+- 空间复杂度：$O(mn)$
+
+
+**上面的代码是否可以优化呢？**
+题意告诉我们起点是左上角。而广度优先搜索的特点是水波扩展（一层层往外）。因此我们只需要考虑向右和向下两个方向即可。因此，我们可以去掉向上和向左的判断。
+
+## 解法二 - DFS
+代码细节不给了。具体还是 DFS 套路加上判断函数即可。
+
