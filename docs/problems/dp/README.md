@@ -49,6 +49,7 @@ sidebarDepth: 0
 ## 计数 DP
 
 ## 区间 DP
+- [1478. 安排邮筒(hard)](./1478.md)
 
 ## 插头 DP
 
