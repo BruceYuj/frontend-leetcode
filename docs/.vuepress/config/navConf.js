@@ -16,6 +16,7 @@ module.exports = [
   {text: '其他', items: [
     {text: '其他', link: '/problems/others/'},
     {text: '排序', link: '/problems/sort/'},
+    {text: '设计', link: '/problems/design/'}
   ]},  
   
 ];
