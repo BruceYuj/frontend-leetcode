@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>25. K 个一组翻转链表 | front-end leetcode</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="a repo about leetcode problems">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/frontend-leetcode/assets/css/0.styles.f642cec9.css" as="style"><link rel="preload" href="/frontend-leetcode/assets/js/app.cf22bc6e.js" as="script"><link rel="preload" href="/frontend-leetcode/assets/js/2.6b78e4fc.js" as="script"><link rel="preload" href="/frontend-leetcode/assets/js/48.5ca93cbf.js" as="script"><link rel="preload" href="/frontend-leetcode/assets/js/3.344ad1c6.js" as="script"><link rel="prefetch" href="/frontend-leetcode/assets/js/10.febf24f7.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/100.3278f6a6.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/101.10e6ccb5.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/102.767f0470.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/103.0160ce03.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/104.4503716c.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/105.3ca8e61d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/106.01fb8164.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/107.40dabccf.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/108.5afeb5a3.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/109.df8e936d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/11.1efe1bc9.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/110.3446aebd.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/111.6ca53d52.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/112.51c53098.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/113.8d6f3d7a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/114.4a82091c.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/115.1c1d36f9.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/116.b0fc19a0.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/117.d9e9fccd.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/118.b3a7c0de.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/119.316fbf87.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/12.ecc1dddd.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/120.ab9fd284.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/121.3ae1695f.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/122.d8ee95b8.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/123.8c769517.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/124.3e214a7a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/125.f2dae426.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/126.d145c8c6.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/127.d8ec5dd0.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/128.74234d83.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/129.52323c15.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/13.778aed16.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/130.43f28dd8.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/131.fd9a1763.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/132.acb084db.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/133.90376d78.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/134.9566cb55.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/135.7f385832.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/136.c34f8a71.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/137.6a64065c.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/138.a6455084.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/139.1295a2af.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/14.56880145.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/140.0ccde89d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/141.b7df3631.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/142.5a90fb0f.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/143.007924a5.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/144.adbdf3b7.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/145.695e55ba.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/146.294c91b7.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/147.092bd731.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/148.b569fa03.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/149.15ddb386.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/15.aae96c43.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/150.0a35da24.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/151.c54f9d96.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/152.1ae2a5b1.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/153.594c3f73.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/154.89088569.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/155.e1eb6892.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/156.754a6f46.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/157.e3392140.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/158.2aeff8d1.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/159.48ae6f06.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/16.1c3919a2.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/160.7c9320be.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/161.b3164ba6.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/162.272fc7c7.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/163.d5fa4f02.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/164.545ea195.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/165.85e69ad5.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/166.03f828c3.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/167.f0715e28.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/168.5551d53e.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/169.ef677933.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/17.e1f31430.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/170.1f82276b.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/171.4abf61fc.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/18.50b15429.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/19.ab9a87de.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/20.2b153f43.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/21.8fe5ff78.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/22.712b5062.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/23.d4169bd7.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/24.ce656951.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/25.db008987.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/26.55d9d8cb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/27.79a7e95a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/28.b9fde2ae.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/29.7e58b466.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/30.3868ebcb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/31.ce8165c2.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/32.f20b4d07.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/33.3d396a87.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/34.6b681309.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/35.21fd1dc1.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/36.f146e4d1.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/37.ec646cbc.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/38.2beaec87.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/39.fd670f4c.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/4.94967eb3.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/40.25a4af94.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/41.34b46f11.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/42.53fccc58.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/43.efc05dec.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/44.465eb8eb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/45.5001296d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/46.f0c47b7c.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/47.dc87dafc.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/49.18232add.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/5.7e48fffb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/50.ba1d6e5a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/51.fbcab07c.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/52.5bdd0a5a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/53.08a5b337.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/54.695d78bb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/55.dd03f23b.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/56.7697d0a8.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/57.06d7b377.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/58.6b787c37.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/59.5125678d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/6.be4a3961.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/60.c2150f6a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/61.b59f02d0.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/62.a748cba9.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/63.b7ba44fb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/64.36c1f912.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/65.afa3c824.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/66.7bfb075d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/67.36c0bebf.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/68.2e2f3c1b.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/69.e0aa1da9.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/7.d779800d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/70.6e444e6e.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/71.7a6f4fbb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/72.a12de229.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/73.57452733.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/74.d78ab62d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/75.a9f252f0.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/76.cff2eec0.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/77.732ccb46.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/78.459eb22f.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/79.575bb5fb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/8.c33dd1e5.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/80.baa13240.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/81.94cf1fb6.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/82.400d27ce.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/83.bd5d846b.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/84.ca4e325a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/85.4c2e5550.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/86.dbbc440d.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/87.6193a52a.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/88.4f231990.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/89.e1b56cbb.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/9.74d02ae6.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/90.b583f379.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/91.f77db477.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/92.5e7f3bad.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/93.041a152f.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/94.1f0cd441.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/95.a048afdd.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/96.4317b6e2.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/97.b75924a6.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/98.20fbf047.js"><link rel="prefetch" href="/frontend-leetcode/assets/js/99.19ed91e0.js">
+    <link rel="stylesheet" href="/frontend-leetcode/assets/css/0.styles.f642cec9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-leetcode/" class="home-link router-link-active"><!----> <span class="site-name">front-end leetcode</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-leetcode/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/dp/" class="nav-link">
+  动态规划
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/data-structure/" class="nav-link router-link-active">
+  基础结构
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/greedy/" class="nav-link">
+  贪心
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/divide-and-conquer/" class="nav-link">
+  分治
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/backtrack/" class="nav-link">
+  回溯
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技巧" class="dropdown-title"><span class="title">技巧</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/bit-operation/" class="nav-link">
+  位运算
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/two-pointers/" class="nav-link">
+  双指针
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/sliding-window/" class="nav-link">
+  滑动窗口
+</a></li></ul></div></div><div class="nav-item"><a href="/frontend-leetcode/problems/bfs-and-dfs/" class="nav-link">
+  BFS/DFS
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/math/" class="nav-link">
+  数学
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/graph/" class="nav-link">
+  图论
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/others/" class="nav-link">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/sort/" class="nav-link">
+  排序
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/design/" class="nav-link">
+  设计
+</a></li></ul></div></div> <a href="https://github.com/BruceYuj/frontend-leetcode" target="_blank" rel="noopener noreferrer" class="repo-link">
+    亲, Github Star 一下
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-leetcode/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/dp/" class="nav-link">
+  动态规划
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/data-structure/" class="nav-link router-link-active">
+  基础结构
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/greedy/" class="nav-link">
+  贪心
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/divide-and-conquer/" class="nav-link">
+  分治
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/backtrack/" class="nav-link">
+  回溯
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技巧" class="dropdown-title"><span class="title">技巧</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/bit-operation/" class="nav-link">
+  位运算
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/two-pointers/" class="nav-link">
+  双指针
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/sliding-window/" class="nav-link">
+  滑动窗口
+</a></li></ul></div></div><div class="nav-item"><a href="/frontend-leetcode/problems/bfs-and-dfs/" class="nav-link">
+  BFS/DFS
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/math/" class="nav-link">
+  数学
+</a></div><div class="nav-item"><a href="/frontend-leetcode/problems/graph/" class="nav-link">
+  图论
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/others/" class="nav-link">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/sort/" class="nav-link">
+  排序
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-leetcode/problems/design/" class="nav-link">
+  设计
+</a></li></ul></div></div> <a href="https://github.com/BruceYuj/frontend-leetcode" target="_blank" rel="noopener noreferrer" class="repo-link">
+    亲, Github Star 一下
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>DATA-STRUCTURE</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数组</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>链表</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-leetcode/problems/data-structure/24.html" class="sidebar-link">24. 两两交换链表中的节点</a></li><li><a href="/frontend-leetcode/problems/data-structure/25.html" aria-current="page" class="active sidebar-link">25. K 个一组翻转链表</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>哈希表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>队列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>堆</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>栈</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>单调栈</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>树</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>线段树</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Trie</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <ul><li><a href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/" target="_blank" rel="noopener noreferrer">25. K 个一组翻转链表<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="递归"><a href="#递归" class="header-anchor">#</a> 递归</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">reverseKGroup</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">let</span> curr <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span>curr <span class="token operator">&amp;&amp;</span> count <span class="token operator">&lt;</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        curr <span class="token operator">=</span> curr<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>count <span class="token operator">===</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        curr <span class="token operator">=</span> <span class="token function">reverseKGroup</span><span class="token punctuation">(</span>curr<span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span>count<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> tmp <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            head<span class="token punctuation">.</span>next <span class="token operator">=</span> curr<span class="token punctuation">;</span>
+            curr <span class="token operator">=</span> head<span class="token punctuation">;</span>
+            head <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
+            count<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        head <span class="token operator">=</span> curr<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="迭代-头插法"><a href="#迭代-头插法" class="header-anchor">#</a> 迭代 - 头插法</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">reverseKGroup</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>k <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> dummy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    dummy<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> prev <span class="token operator">=</span> dummy<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> tail <span class="token operator">=</span> head<span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span>tail <span class="token operator">&amp;&amp;</span> tail<span class="token punctuation">.</span>next <span class="token operator">&amp;&amp;</span> count <span class="token operator">&lt;</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            tail <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            count<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>count <span class="token operator">&lt;</span> k<span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span>prev<span class="token punctuation">.</span>next <span class="token operator">!==</span> tail<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> removed <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            head<span class="token punctuation">.</span>next <span class="token operator">=</span> removed<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            removed<span class="token punctuation">.</span>next <span class="token operator">=</span> prev<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            prev<span class="token punctuation">.</span>next <span class="token operator">=</span> removed<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        prev <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        head <span class="token operator">=</span> tail <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> dummy<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>复杂度分析</strong>:</p> <ul><li>时间复杂度：<mjx-container jax="CHTML" class="MathJax"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c c="O"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c c="("></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c c="N"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c c=")"></mjx-c></mjx-mo></mjx-math></mjx-container></li> <li>空间复杂度：<mjx-container jax="CHTML" class="MathJax"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c c="O"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c c="("></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c c="1"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c c=")"></mjx-c></mjx-mo></mjx-math></mjx-container></li></ul> <h2 id="迭代-尾插法"><a href="#迭代-尾插法" class="header-anchor">#</a> 迭代 - 尾插法</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">reverseKGroup</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>k <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> dummy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    dummy<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> prev <span class="token operator">=</span> dummy<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> tail <span class="token operator">=</span> head<span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span>tail <span class="token operator">&amp;&amp;</span> tail<span class="token punctuation">.</span>next <span class="token operator">&amp;&amp;</span> count <span class="token operator">&lt;</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            tail <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            count<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>count <span class="token operator">&lt;</span> k<span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+    
+        <span class="token keyword">while</span><span class="token punctuation">(</span>prev<span class="token punctuation">.</span>next <span class="token operator">!==</span> tail<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> p <span class="token operator">=</span> prev<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            prev<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            tail<span class="token punctuation">.</span>next <span class="token operator">=</span> prev<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            prev<span class="token punctuation">.</span>next <span class="token operator">=</span> p<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        prev <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        head <span class="token operator">=</span> tail <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> dummy<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/BruceYuj/frontend-leetcode/edit/master/docs/problems/data-structure/25.md" target="_blank" rel="noopener noreferrer">在 Github 上改善此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">6/15/2020, 5:04:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend-leetcode/problems/data-structure/24.html" class="prev">
+        24. 两两交换链表中的节点
+      </a></span> <span class="next"><a href="/frontend-leetcode/problems/data-structure/41.html">
+        41. 缺失的第一个正数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-leetcode/assets/js/app.cf22bc6e.js" defer></script><script src="/frontend-leetcode/assets/js/2.6b78e4fc.js" defer></script><script src="/frontend-leetcode/assets/js/48.5ca93cbf.js" defer></script><script src="/frontend-leetcode/assets/js/3.344ad1c6.js" defer></script>
+  </body>
+</html>
