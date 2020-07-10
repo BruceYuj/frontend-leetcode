@@ -2259,6 +2259,11 @@ color@^3.0.0:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
+colors@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npm.taobao.org/colors/download/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  integrity sha1-xQSRR51MG9rtLJztMs98fcI2D3g=
+
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.npm.taobao.org/combined-stream/download/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -7702,9 +7707,11 @@ vuepress-mergeable@^1.0.2:
     deconstruct-merge "^1.1.0"
 
 vuepress-plugin-auto-sidebar@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.npm.taobao.org/vuepress-plugin-auto-sidebar/download/vuepress-plugin-auto-sidebar-1.4.1.tgz#c8586447affb2faa4155a9828916bb9bd594f188"
-  integrity sha1-yFhkR6/7L6pBVamCiRa7m9WU8Yg=
+  version "1.5.0"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-auto-sidebar/download/vuepress-plugin-auto-sidebar-1.5.0.tgz#fc11b32f5e7976394bab01edd68cd602b1c0cefe"
+  integrity sha1-/BGzL155djlLqwHt1ozWArHAzv4=
+  dependencies:
+    colors "^1.4.0"
 
 vuepress-plugin-container@^2.0.2:
   version "2.1.4"
